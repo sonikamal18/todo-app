@@ -1,25 +1,22 @@
 import {
-	Button,
-	Container,
-	Text,
-	Title,
-	Modal,
-	TextInput,
-	Group,
-	Card,
 	ActionIcon,
-	Code,
+	Button,
+	Card,
+	Container,
+	Group,
+	Modal,
+	Text,
+	TextInput,
+	Title
 } from '@mantine/core';
-import { useState, useRef, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { MoonStars, Sun, Trash } from 'tabler-icons-react';
 
 import {
-	MantineProvider,
 	ColorSchemeProvider,
-	ColorScheme,
+	MantineProvider
 } from '@mantine/core';
-import { useColorScheme } from '@mantine/hooks';
-import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 
 export default function App() {
 	const [tasks, setTasks] = useState([]);
